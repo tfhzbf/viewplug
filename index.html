@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>viewplug</title>
+  <link href="dist/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+  <link href="dist/rwd-table.min.css" rel="stylesheet" type="text/css"/>
+  <style>
+    
+  </style>
+</head>
+
+<body>
+  <div id="app">
+      <res-list v-bind:tableHead="tableHead" v-bind:tableBody="tableBody" />
+  </div>
+  <script src="dist/jquery.min.js"></script>
+  <script src="dist/vue.min.js"></script>
+  <script src="dist/bootstrap/js/bootstrap.min.js"></script>
+  <script src="dist/rwd-table.min.js"></script>
+  <script src="dist/vueplug.js"></script>
+  <script>
+new Vue({
+el: '#app',
+data: {
+tableHead:[
+[{
+KEY:"name",
+SHOWNR:"名字"
+},{
+KEY:"Age",
+SHOWNR:"年龄"
+},{
+KEY:"Occupation",
+SHOWNR:"职业"
+},{
+KEY:"Occupation",
+SHOWNR:"职业"
+},{
+KEY:"Occupation",
+SHOWNR:"职业"
+},{
+KEY:"Occupation",
+SHOWNR:"职业"
+},{
+KEY:"Occupation",
+SHOWNR:"职业"
+},{
+KEY:"Occupation",
+SHOWNR:"职业"
+},{
+KEY:"Occupation",
+SHOWNR:"职业"
+}]
+],
+tableBody:[
+[{
+KEY:"name",
+SHOWNR:"名字"
+},{
+KEY:"Age",
+SHOWNR:"年龄"
+},{
+KEY:"Occupation",
+SHOWNR:"职业"
+},{
+KEY:"Occupation",
+SHOWNR:"职业"
+},{
+KEY:"Occupation",
+SHOWNR:"职业"
+},{
+KEY:"Occupation",
+SHOWNR:"职业"
+},{
+KEY:"Occupation",
+SHOWNR:"职业"
+},{
+KEY:"Occupation",
+SHOWNR:"职业"
+},{
+KEY:"Occupation",
+SHOWNR:"职业"
+}],
+[{
+KEY:"name",
+SHOWNR:"名字"
+},{
+KEY:"Age",
+SHOWNR:"年龄"
+},{
+KEY:"Occupation",
+SHOWNR:"职业"
+},{
+KEY:"Occupation",
+SHOWNR:"职业"
+},{
+KEY:"Occupation",
+SHOWNR:"职业"
+},{
+KEY:"Occupation",
+SHOWNR:"职业"
+},{
+KEY:"Occupation",
+SHOWNR:"职业"
+},{
+KEY:"Occupation",
+SHOWNR:"职业"
+},{
+KEY:"Occupation",
+SHOWNR:"职业"
+}],
+  [{
+    KEY: "name",
+    SHOWNR: "名字"
+  }, {
+    KEY: "Age",
+    SHOWNR: "年龄"
+  }, {
+    KEY: "Occupation",
+    SHOWNR: "职业"
+  }, {
+    KEY: "Occupation",
+    SHOWNR: "职业"
+  }, {
+    KEY: "Occupation",
+    SHOWNR: "职业"
+  }, {
+    KEY: "Occupation",
+    SHOWNR: "职业"
+  }, {
+    KEY: "Occupation",
+    SHOWNR: "职业"
+  }, {
+    KEY: "Occupation",
+    SHOWNR: "职业"
+  }, {
+    KEY: "Occupation",
+    SHOWNR: "职业"
+  }],
+  [{
+    KEY: "name",
+    SHOWNR: "名字"
+  }, {
+    KEY: "Age",
+    SHOWNR: "年龄"
+  }, {
+    KEY: "Occupation",
+    SHOWNR: "职业"
+  }, {
+    KEY: "Occupation",
+    SHOWNR: "职业"
+  }, {
+    KEY: "Occupation",
+    SHOWNR: "职业"
+  }, {
+    KEY: "Occupation",
+    SHOWNR: "职业"
+  }, {
+    KEY: "Occupation",
+    SHOWNR: "职业"
+  }, {
+    KEY: "Occupation",
+    SHOWNR: "职业"
+  }, {
+    KEY: "Occupation",
+    SHOWNR: "职业"
+  }],
+  [{
+    KEY: "name",
+    SHOWNR: "名字"
+  }, {
+    KEY: "Age",
+    SHOWNR: "年龄"
+  }, {
+    KEY: "Occupation",
+    SHOWNR: "职业"
+  }, {
+    KEY: "Occupation",
+    SHOWNR: "职业"
+  }, {
+    KEY: "Occupation",
+    SHOWNR: "职业"
+  }, {
+    KEY: "Occupation",
+    SHOWNR: "职业"
+  }, {
+    KEY: "Occupation",
+    SHOWNR: "职业"
+  }, {
+    KEY: "Occupation",
+    SHOWNR: "职业"
+  }, {
+    KEY: "Occupation",
+    SHOWNR: "职业"
+  }],
+  [{
+    KEY: "name",
+    SHOWNR: "名字"
+  }, {
+    KEY: "Age",
+    SHOWNR: "年龄"
+  }, {
+    KEY: "Occupation",
+    SHOWNR: "职业"
+  }, {
+    KEY: "Occupation",
+    SHOWNR: "职业"
+  }, {
+    KEY: "Occupation",
+    SHOWNR: "职业"
+  }, {
+    KEY: "Occupation",
+    SHOWNR: "职业"
+  }, {
+    KEY: "Occupation",
+    SHOWNR: "职业"
+  }, {
+    KEY: "Occupation",
+    SHOWNR: "职业"
+  }, {
+    KEY: "Occupation",
+    SHOWNR: "职业"
+  }],
+  [{
+    KEY: "name",
+    SHOWNR: "名字"
+  }, {
+    KEY: "Age",
+    SHOWNR: "年龄"
+  }, {
+    KEY: "Occupation",
+    SHOWNR: "职业"
+  }, {
+    KEY: "Occupation",
+    SHOWNR: "职业"
+  }, {
+    KEY: "Occupation",
+    SHOWNR: "职业"
+  }, {
+    KEY: "Occupation",
+    SHOWNR: "职业"
+  }, {
+    KEY: "Occupation",
+    SHOWNR: "职业"
+  }, {
+    KEY: "Occupation",
+    SHOWNR: "职业"
+  }, {
+    KEY: "Occupation",
+    SHOWNR: "职业"
+  }],
+  [{
+    KEY: "name",
+    SHOWNR: "名字"
+  }, {
+    KEY: "Age",
+    SHOWNR: "年龄"
+  }, {
+    KEY: "Occupation",
+    SHOWNR: "职业"
+  }, {
+    KEY: "Occupation",
+    SHOWNR: "职业"
+  }, {
+    KEY: "Occupation",
+    SHOWNR: "职业"
+  }, {
+    KEY: "Occupation",
+    SHOWNR: "职业"
+  }, {
+    KEY: "Occupation",
+    SHOWNR: "职业"
+  }, {
+    KEY: "Occupation",
+    SHOWNR: "职业"
+  }, {
+    KEY: "Occupation",
+    SHOWNR: "职业"
+  }]
+]
+}
+});
+  </script>
+</body>
+
+</html>
