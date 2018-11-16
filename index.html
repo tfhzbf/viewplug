@@ -1,288 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <meta charset="utf-8">
-  <title>viewplug</title>
-  <link href="dist/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
-  <link href="dist/rwd-table.min.css" rel="stylesheet" type="text/css"/>
-  <style>
-    
-  </style>
-</head>
+  <head>
+    <meta charset="utf-8">
+    <title>viewplug</title>
+    <link href="dist/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet"
+      type="text/css" />
+    <link href="dist/lib/rwd-table.min.css" rel="stylesheet" type="text/css" />
+    <style>
 
-<body>
-  <div id="app">
-      <res-list v-bind:tableHead="tableHead" v-bind:tableBody="tableBody" />
-  </div>
-  <script src="dist/jquery.min.js"></script>
-  <script src="dist/vue.min.js"></script>
-  <script src="dist/bootstrap/js/bootstrap.min.js"></script>
-  <script src="dist/rwd-table.min.js"></script>
-  <script src="dist/vueplug.js"></script>
-  <script>
-new Vue({
-el: '#app',
-data: {
-tableHead:[
-[{
-KEY:"name",
-SHOWNR:"名字"
-},{
-KEY:"Age",
-SHOWNR:"年龄"
-},{
-KEY:"Occupation",
-SHOWNR:"职业"
-},{
-KEY:"Occupation",
-SHOWNR:"职业"
-},{
-KEY:"Occupation",
-SHOWNR:"职业"
-},{
-KEY:"Occupation",
-SHOWNR:"职业"
-},{
-KEY:"Occupation",
-SHOWNR:"职业"
-},{
-KEY:"Occupation",
-SHOWNR:"职业"
-},{
-KEY:"Occupation",
-SHOWNR:"职业"
-}]
-],
-tableBody:[
-[{
-KEY:"name",
-SHOWNR:"名字"
-},{
-KEY:"Age",
-SHOWNR:"年龄"
-},{
-KEY:"Occupation",
-SHOWNR:"职业"
-},{
-KEY:"Occupation",
-SHOWNR:"职业"
-},{
-KEY:"Occupation",
-SHOWNR:"职业"
-},{
-KEY:"Occupation",
-SHOWNR:"职业"
-},{
-KEY:"Occupation",
-SHOWNR:"职业"
-},{
-KEY:"Occupation",
-SHOWNR:"职业"
-},{
-KEY:"Occupation",
-SHOWNR:"职业"
-}],
-[{
-KEY:"name",
-SHOWNR:"名字"
-},{
-KEY:"Age",
-SHOWNR:"年龄"
-},{
-KEY:"Occupation",
-SHOWNR:"职业"
-},{
-KEY:"Occupation",
-SHOWNR:"职业"
-},{
-KEY:"Occupation",
-SHOWNR:"职业"
-},{
-KEY:"Occupation",
-SHOWNR:"职业"
-},{
-KEY:"Occupation",
-SHOWNR:"职业"
-},{
-KEY:"Occupation",
-SHOWNR:"职业"
-},{
-KEY:"Occupation",
-SHOWNR:"职业"
-}],
-  [{
-    KEY: "name",
-    SHOWNR: "名字"
-  }, {
-    KEY: "Age",
-    SHOWNR: "年龄"
-  }, {
-    KEY: "Occupation",
-    SHOWNR: "职业"
-  }, {
-    KEY: "Occupation",
-    SHOWNR: "职业"
-  }, {
-    KEY: "Occupation",
-    SHOWNR: "职业"
-  }, {
-    KEY: "Occupation",
-    SHOWNR: "职业"
-  }, {
-    KEY: "Occupation",
-    SHOWNR: "职业"
-  }, {
-    KEY: "Occupation",
-    SHOWNR: "职业"
-  }, {
-    KEY: "Occupation",
-    SHOWNR: "职业"
-  }],
-  [{
-    KEY: "name",
-    SHOWNR: "名字"
-  }, {
-    KEY: "Age",
-    SHOWNR: "年龄"
-  }, {
-    KEY: "Occupation",
-    SHOWNR: "职业"
-  }, {
-    KEY: "Occupation",
-    SHOWNR: "职业"
-  }, {
-    KEY: "Occupation",
-    SHOWNR: "职业"
-  }, {
-    KEY: "Occupation",
-    SHOWNR: "职业"
-  }, {
-    KEY: "Occupation",
-    SHOWNR: "职业"
-  }, {
-    KEY: "Occupation",
-    SHOWNR: "职业"
-  }, {
-    KEY: "Occupation",
-    SHOWNR: "职业"
-  }],
-  [{
-    KEY: "name",
-    SHOWNR: "名字"
-  }, {
-    KEY: "Age",
-    SHOWNR: "年龄"
-  }, {
-    KEY: "Occupation",
-    SHOWNR: "职业"
-  }, {
-    KEY: "Occupation",
-    SHOWNR: "职业"
-  }, {
-    KEY: "Occupation",
-    SHOWNR: "职业"
-  }, {
-    KEY: "Occupation",
-    SHOWNR: "职业"
-  }, {
-    KEY: "Occupation",
-    SHOWNR: "职业"
-  }, {
-    KEY: "Occupation",
-    SHOWNR: "职业"
-  }, {
-    KEY: "Occupation",
-    SHOWNR: "职业"
-  }],
-  [{
-    KEY: "name",
-    SHOWNR: "名字"
-  }, {
-    KEY: "Age",
-    SHOWNR: "年龄"
-  }, {
-    KEY: "Occupation",
-    SHOWNR: "职业"
-  }, {
-    KEY: "Occupation",
-    SHOWNR: "职业"
-  }, {
-    KEY: "Occupation",
-    SHOWNR: "职业"
-  }, {
-    KEY: "Occupation",
-    SHOWNR: "职业"
-  }, {
-    KEY: "Occupation",
-    SHOWNR: "职业"
-  }, {
-    KEY: "Occupation",
-    SHOWNR: "职业"
-  }, {
-    KEY: "Occupation",
-    SHOWNR: "职业"
-  }],
-  [{
-    KEY: "name",
-    SHOWNR: "名字"
-  }, {
-    KEY: "Age",
-    SHOWNR: "年龄"
-  }, {
-    KEY: "Occupation",
-    SHOWNR: "职业"
-  }, {
-    KEY: "Occupation",
-    SHOWNR: "职业"
-  }, {
-    KEY: "Occupation",
-    SHOWNR: "职业"
-  }, {
-    KEY: "Occupation",
-    SHOWNR: "职业"
-  }, {
-    KEY: "Occupation",
-    SHOWNR: "职业"
-  }, {
-    KEY: "Occupation",
-    SHOWNR: "职业"
-  }, {
-    KEY: "Occupation",
-    SHOWNR: "职业"
-  }],
-  [{
-    KEY: "name",
-    SHOWNR: "名字"
-  }, {
-    KEY: "Age",
-    SHOWNR: "年龄"
-  }, {
-    KEY: "Occupation",
-    SHOWNR: "职业"
-  }, {
-    KEY: "Occupation",
-    SHOWNR: "职业"
-  }, {
-    KEY: "Occupation",
-    SHOWNR: "职业"
-  }, {
-    KEY: "Occupation",
-    SHOWNR: "职业"
-  }, {
-    KEY: "Occupation",
-    SHOWNR: "职业"
-  }, {
-    KEY: "Occupation",
-    SHOWNR: "职业"
-  }, {
-    KEY: "Occupation",
-    SHOWNR: "职业"
-  }]
-]
-}
-});
+  </style>
+  </head>
+
+  <body onload="itemPageLoadData('21466899')">
+    <div id="app">
+      <supermap></supermap>
+    </div>
+
+    <script type="text/javascript" exclude="iclient-classic" include="tianditu"
+      src="http://218.58.174.202:7777/supermap/dist/classic/include-classic.js"></script>
+    <script src="dist/lib/jquery.min.js"></script>
+    <script src="dist/lib/vue.min.js"></script>
+    <script src="dist/lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="dist/lib/rwd-table.min.js"></script>
+    <script src="dist/vueplug.js"></script>
+
+    <script>
+    /**
+     * @description 请求数据
+     * @returns
+     */
+    function itemPageLoadData(fid) {
+      getJSONData("supermap",function (pageData){
+        new Vue({
+          el: "#app",
+          data: {
+            pageData: pageData[0]
+          }
+        });
+      })
+    }
+
+    function getJSONData(nr,back){
+       $.ajax({ 
+        type: "GET", 
+        url: "./dist/json/"+ nr+".txt", 
+        success: function (str) { 
+          let data =JSON.parse(str);
+          back(data);
+        },
+        error:function(err){
+        }
+      });
+    }
+
   </script>
-</body>
+  </body>
 
 </html>
